@@ -1,4 +1,4 @@
-from Logic.Worker import Worker
+from API.Worker import Worker
 
 
 class GetTopTracks(Worker):

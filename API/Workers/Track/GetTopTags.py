@@ -2,7 +2,7 @@
 Grabs the top tags for a song.
 """
 
-from Logic.Worker import Worker
+from API.Worker import Worker
 
 class GetTopTags(Worker):
     def __init__(self, api_key):
