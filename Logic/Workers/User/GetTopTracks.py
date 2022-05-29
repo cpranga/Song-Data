@@ -1,7 +1,7 @@
 from Logic.Worker import Worker
 
 
-class GetTopSongs(Worker):
+class GetTopTracks(Worker):
     def __init__(self, api_key):
         super().__init__(api_key, 'user.gettoptracks')
 
@@ -16,5 +16,5 @@ class GetTopSongs(Worker):
 if __name__ == '__main__':
     user = input("Username: ")
     api_key = input("API Key: ")
-    Worker = GetTopSongs(api_key)
+    Worker = GetTopTracks(api_key)
     print(Worker.make_call(user))

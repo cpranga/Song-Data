@@ -1,5 +1,5 @@
 from Worker import Worker
-from Workers.User.GetTopSongs import GetTopSongs
+from Workers.User.GetTopTracks import GetTopTracks
 from Workers.Track.GetTopTags import GetTopTags
 
 
@@ -11,7 +11,7 @@ class Factory:
         if type == 'track.gettoptags':
             return GetTopTags(self._api_key)
         elif type == 'user.gettoptracks':
-            return GetTopSongs(self._api_key)
+            return GetTopTracks(self._api_key)
 
 
 if __name__ == '__main__':
