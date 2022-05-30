@@ -1,6 +1,5 @@
-from Worker import Worker
-from Workers.User.GetTopTracks import GetTopTracks
-from Workers.Track.GetTopTags import GetTopTags
+from API.Workers.User.GetTopTracks import GetTopTracks
+from API.Workers.Track.GetTopTags import GetTopTags
 
 
 class Factory:
